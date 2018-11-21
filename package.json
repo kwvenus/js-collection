@@ -1,7 +1,8 @@
 {
   "scripts": {
-    "test": "jest",
-    "test-single": "jasmine-node --verbose "
+    "test": "jasmine-node --verbose spec",
+    "test-single": "jasmine-node --verbose ",
+    "testnpm": "jest"
   },
   "dependencies": {
     "jasmine-node": "1.14.5"

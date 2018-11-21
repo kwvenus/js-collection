@@ -1,6 +1,8 @@
 'use strict';
 
 function choose_even(collection) {
+
+
   let iteration;
   let result = [];
 
