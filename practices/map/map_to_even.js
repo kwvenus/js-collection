@@ -1,12 +1,21 @@
 'use strict';
+
+function plus1(element){
+  return element+1;
+}
+
+function times4(element){
+  return element*4;
+}
+
+function mappingElement(element){
+  return element => plus1(times4(element));
+}
+
 function map_to_even(collection){
 
-  let iteration;
+  const map = collection.map(mappingElement(element));
 
-  for (iteration = 0; iteration < collection.length; iteration++){
-    collection[iteration] *= 2;
-  }
-
-  return collection;
+  return map;
 }
 module.exports = map_to_even;
